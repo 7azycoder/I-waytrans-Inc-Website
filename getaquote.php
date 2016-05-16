@@ -242,158 +242,7 @@ if (!$errors) {
 	
   <body>
 		
-		<!--Wrapper Section Start Here -->
-		<div id="wrapper" class="homepage homepage-1" style="padding-top: 0px;">
-			<!--header Section Start Here -->
-			<header id="header" class="header normal">
-				<!-- primary header Start Here -->
-				<div class="primary-header">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-sm-6">
-								<div class="mail">
-									<img src="images/icon-mail.png" alt="">
-									<span>Email us at : <a class="email-us" href="mailto:dispatch@i-waytransport.com">dispatch@i-waytrans.com</a></span>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-6">
-								<div class="social-wrap clearfix">
-									<a href="#" class="request">Driver Portal</a>
-									<ul class="social">
-										<li>
-											<a href="#"> <i class="fa fa-facebook"></i> </a>
-										</li>
-										<li>
-											<a href="#"> <i class="fa fa-twitter"></i> </a>
-										</li>
-										<li>
-											<a href="#"> <i class="fa fa-google-plus"></i> </a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- primary header Ends Here -->
-				<!-- main header Starts Here -->
-				<div class="main-header">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 hidden-xs">
-
-								<div class="call-us">
-									<ul>
-										<li>
-											<img src="images/iphone.png" alt="">
-											<span class="transport">CALL US NOW FOR <span></span> YOUR TRANSPORT</span>
-										</li>
-										<li>
-											<a href="tel:5917890123">591 7890 123</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-xs-12 col-sm-3">
-								<a href="#" class="logo"> <img src="images/i-waytrans.jpg" alt=""> </a>
-
-							</div>
-							<div class="col-xs-12 col-sm-9 custom-nav">
-								<nav>
-									<div id="cssmenu"><div id="menu-button">Menu</div>
-										<ul class="navigation">
-											<li class="active ">
-												<a href="index.html">Home</a>
-											</li>
-
-											<li class="has-sub"><span class="submenu-button"></span>
-												<a href="javascript:void(0);">About Us</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="about.html">Profile</a>
-													</li>
-													<li>
-														<a href="about.html">Vision</a>
-													</li>
-													<li>
-														<a href="about.html">Our People</a>
-													</li>
-                                                    <li>
-														<a href="about.html">Technologies</a>
-													</li>
-                                                    <li>
-														<a href="about.html">Privacy Policy</a>
-													</li>
-                                                    
-												</ul>
-											</li>
-											
-											<li class="has-sub"><span class="submenu-button"></span>
-												<a href="javascript:void(0);">Services</a>
-												<ul class="sub-menu">
-													<li>
-														<a href="services.html">service</a>
-													</li>
-													<li>
-														<a href="services.html">services details</a>
-													</li>
-												</ul>
-											</li>
-											<li class="has-sub"><span class="submenu-button"></span>
-												<a href="javascript:void(0);">Careers</a>
-
-												<ul class="sub-menu">
-													<li>
-														<a href="careers.html">General Career</a>
-													</li>
-                                                    <li>
-														<a href="careers.html">Driver Career</a>
-													</li>
-													
-												</ul>
-
-											</li>
-											<li>
-												<a href="portfolio.html">Portfolio</a>
-											</li>
-											<li class="has-sub"><span class="submenu-button"></span>
-												<a href="javascript:void(0);">Customers</a>
-                                                <ul class="sub-menu">
-													<li>
-														<a href="customers.html">Customer Login</a>
-													</li>
-                                                    <li>
-														<a href="customers.html">Sign Up</a>
-													</li>
-                                                    <li>
-														<a href="customers.html">Get a Quote</a>
-													</li>
-                                                    <li>
-														<a href="customers.html">Documents/Forms</a>
-													</li>
-                                                    
-												</ul>
-											</li>
-											<li>
-												<a href="contact.html">Contact</a>
-											</li>
-											
-										</ul>
-									</div>
-								</nav>
-
-								<div class="nav-icon">
-									<span></span>
-									<span></span>
-									<span></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- main header Ends Here -->
-			</header>
-			<!--header Section Ends Here -->
+		<?php require_once('header.php'); ?>
 		<!-- banner -->
 	<div class="banner-1">
 		
@@ -507,7 +356,7 @@ if (!$errors) {
 
 
 								<div class="contact-bottom-top">
-									<textarea name="comment" id="comment" value="<?php echo escape(Input::get('comment'));?>" autocomplete="off"  placeholder="Please provide other details which want us to know !"></textarea>								
+									<textarea name="comment" id="comment"  autocomplete="off"  placeholder="Please provide other details which want us to know !"><?php echo escape(Input::get('comment'));?></textarea>								
 								</div>
 
 								<input type="submit" name="submit" id="submit" value="Get Quote">
@@ -534,38 +383,7 @@ if (!$errors) {
 
 <!-- Map Section
    ================================================== -->
-   <section id="map">
-
-      <p class="map-error">Something went wrong... Unable to load map... Please try to enable javascript</p>
-
-   </section> <!-- Map Section End-->
-<footer>
-   		<div class="container">
-
-      <div class="row-new">
-
-         <div class="col g-7">
-            <ul class="copyright">
-               <li>&copy; 2014 Kreative</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout">Styleshout</a></li>               
-            </ul>
-         </div>
-
-         <div class="col g-5 pull-right">
-            <ul class="social-links">
-               <li><a href="#"><i class="icon-facebook"></i></a></li>
-               <li><a href="#"><i class="icon-twitter"></i></a></li>
-               <li><a href="#"><i class="icon-google-plus-sign"></i></a></li>
-               <li><a href="#"><i class="icon-linkedin"></i></a></li>
-               <li><a href="#"><i class="icon-skype"></i></a></li>
-               <li><a href="#"><i class="icon-rss-sign"></i></a></li>
-            </ul>
-         </div>
-
-      </div>
-      </div>
-
-   </footer> <!-- Footer End-->
+     <?php require_once('footer.php'); ?>
 
 	
 		</div>
